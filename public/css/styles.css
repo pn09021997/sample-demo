@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.wrapper {
+  margin: 10px 20px;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 30px;
+  color: #b25534ad;
+}
+
+hr {
+  margin: 50px 30%;
+  background-color: #b25534ad;
+}
+
+section {
+  text-align: center;
+}
+
+/* Icon Bar */
+.icon-bar {
+  /*Vertical*/
+  /*
+  width: 10%;
+  */
+  /*Horizontal*/
+  width: 100%;
+  background-color: #e3e1e6;
+  overflow: auto;
+}
+
+.icon-bar a {
+  /*Vertical*/
+  /*
+  display: block;
+  */
+  /*Horizontal*/
+  float: left;
+  width: 20%;
+
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: #000;
+  font-size: 36px;
+}
+
+.icon-bar .toggle {
+  float: right;
+  display: none;
+}
+
+.icon-bar .active {
+  background-color: #eedbb1;
+}
+
+.icon-bar a:hover {
+  background-color: #aaa6b1;
+}
+
+.icon-bar-hide {
+  opacity: 1;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-bar a {
+    display: block;
+    width: 100%;
+  }
+
+  .icon-bar .toggle {
+    display: block;
+  }
+
+  .icon-bar-show {
+    opacity: 1;
+    display: block;
+  }
+
+  .icon-bar-hide {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Accordion */
+.accordion {
+  text-align: left;
+  font-size: 4rem;
+}
+
+.accordion .accordion__toggle {
+  width: 100%;
+  text-align: left;
+  background-color: #e3e1e6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.accordion .active,
+.accordion__toggle:hover {
+  background-color: #aaa6b1;
+}
+
+.accordion .accordion__panel {
+  padding: 0 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion .accordion__panel p {
+  padding: 20px 0;
+}
